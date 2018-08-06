@@ -1,0 +1,193 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project xmlns="http://maven.apache.org/POM/4.0.0"
+         xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+         xsi:schemaLocation="http://maven.apache.org/POM/4.0.0 http://maven.apache.org/xsd/maven-4.0.0.xsd">
+    <modelVersion>4.0.0</modelVersion>
+
+    <groupId>myTest</groupId>
+    <artifactId>springBoot.learn</artifactId>
+    <version>1.0-SNAPSHOT</version>
+    <packaging>war</packaging>
+
+    <properties>
+        <java.version>1.8</java.version>
+    </properties>
+
+    <!-- https://mvnrepository.com/artifact/org.springframework.boot/spring-boot-starter -->
+    <parent>
+    <groupId>org.springframework.boot</groupId>
+    <artifactId>spring-boot-starter-parent</artifactId>
+    <version>2.0.3.RELEASE</version>
+</parent>
+    <dependencies>
+        <dependency>
+            <groupId>org.springframework.boot</groupId>
+            <artifactId>spring-boot-starter-web</artifactId>
+            <exclusions>
+            <exclusion>
+            <groupId>org.springframework.boot</groupId>
+            <artifactId>spring-boot-starter-tomcat</artifactId>
+            </exclusion>
+            </exclusions>
+        </dependency>
+        <!-- https://mvnrepository.com/artifact/org.springframework.boot/spring-boot-starter-tomcat -->
+        <dependency>
+            <groupId>org.springframework.boot</groupId>
+            <artifactId>spring-boot-starter-tomcat</artifactId>
+        </dependency>
+        <dependency>
+            <groupId>org.springframework.boot</groupId>
+            <artifactId>spring-boot-starter-test</artifactId>
+            <scope>test</scope>
+        </dependency>
+        <!-- https://mvnrepository.com/artifact/org.springframework.boot/spring-boot-starter-actuator -->
+        <dependency>
+            <groupId>org.springframework.boot</groupId>
+            <artifactId>spring-boot-starter-actuator</artifactId>
+        </dependency>
+        <!-- https://mvnrepository.com/artifact/org.springframework.boot/spring-boot-starter-aop -->
+        <dependency>
+            <groupId>org.springframework.boot</groupId>
+            <artifactId>spring-boot-starter-aop</artifactId>
+        </dependency>
+        <!-- https://mvnrepository.com/artifact/javax.servlet/javax.servlet-api -->
+        <dependency>
+            <groupId>javax.servlet</groupId>
+            <artifactId>javax.servlet-api</artifactId>
+            <version>4.0.1</version>
+            <scope>provided</scope>
+        </dependency>
+        <!-- https://mvnrepository.com/artifact/org.springframework/spring-context -->
+        <!--这个jar文件为Spring核心提供了大量扩展 -->
+        <dependency>
+            <groupId>org.springframework</groupId>
+            <artifactId>spring-context</artifactId>
+            <version>5.0.7.RELEASE</version>
+        </dependency>
+        <!-- https://mvnrepository.com/artifact/org.springframework/spring-core -->
+        <!-- 这个jar文件包含Spring框架基本的核心工具类 -->
+        <dependency>
+            <groupId>org.springframework</groupId>
+            <artifactId>spring-core</artifactId>
+            <version>5.0.7.RELEASE</version>
+        </dependency>
+        <!-- https://mvnrepository.com/artifact/org.springframework/spring-beans -->
+        <!-- 这个jar文件是所有应用都要用到的，它包含访问配置文件、创建和管理bean -->
+        <dependency>
+            <groupId>org.springframework</groupId>
+            <artifactId>spring-beans</artifactId>
+            <version>5.0.7.RELEASE</version>
+        </dependency>
+        <!-- https://mvnrepository.com/artifact/org.springframework/spring-web -->
+        <!-- web 配置需要的 -->
+        <dependency>
+            <groupId>org.springframework</groupId>
+            <artifactId>spring-web</artifactId>
+            <version>5.0.7.RELEASE</version>
+        </dependency>
+        <!-- https://mvnrepository.com/artifact/org.springframework.boot/spring-boot-starter-data-jpa -->
+        <dependency>
+            <groupId>org.springframework.boot</groupId>
+            <artifactId>spring-boot-starter-data-jpa</artifactId>
+            <version>2.0.3.RELEASE</version>
+        </dependency>
+
+        <!-- https://mvnrepository.com/artifact/org.springframework/spring-orm -->
+        <!-- 整合第三方的orm实现，如hibernate，ibatis，jdo以及spring 的jpa实现 -->
+        <dependency>
+            <groupId>org.springframework</groupId>
+            <artifactId>spring-orm</artifactId>
+            <version>5.0.7.RELEASE</version>
+        </dependency>
+        <!-- https://mvnrepository.com/artifact/org.hibernate/hibernate-core -->
+        <dependency>
+            <groupId>org.hibernate</groupId>
+            <artifactId>hibernate-core</artifactId>
+            <version>5.3.1.Final</version>
+        </dependency>
+         <!--https://mvnrepository.com/artifact/org.hibernate/hibernate-ehcache-->
+         <!--hibernate 缓存-->
+        <!--<dependency>-->
+            <!--<groupId>org.hibernate</groupId>-->
+            <!--<artifactId>hibernate-ehcache</artifactId>-->
+            <!--<version>5.3.1.Final</version>-->
+        <!--</dependency>-->
+        <!-- https://mvnrepository.com/artifact/org.hibernate.javax.persistence/hibernate-jpa-2.1-api -->
+        <!-- JAP API -->
+        <dependency>
+            <groupId>org.hibernate.javax.persistence</groupId>
+            <artifactId>hibernate-jpa-2.1-api</artifactId>
+            <version>1.0.2.Final</version>
+        </dependency>
+        <!-- https://mvnrepository.com/artifact/org.springframework.data/spring-data-jpa -->
+        <dependency>
+            <groupId>org.springframework.data</groupId>
+            <artifactId>spring-data-jpa</artifactId>
+            <version>2.0.8.RELEASE</version>
+        </dependency>
+        <!-- https://mvnrepository.com/artifact/org.projectlombok/lombok -->
+        <dependency>
+            <groupId>org.projectlombok</groupId>
+            <artifactId>lombok</artifactId>
+            <version>1.18.0</version>
+            <scope>provided</scope>
+        </dependency>
+
+        <!-- https://mvnrepository.com/artifact/org.hibernate/hibernate-entitymanager -->
+        <!--  Hibernate JPA 支持 -->
+        <dependency>
+            <groupId>org.hibernate</groupId>
+            <artifactId>hibernate-entitymanager</artifactId>
+            <version>5.3.1.Final</version>
+        </dependency>
+        <!-- https://mvnrepository.com/artifact/com.jpattern/jporm-jdbctemplate -->
+        <dependency>
+            <groupId>com.jpattern</groupId>
+            <artifactId>jporm-jdbctemplate</artifactId>
+            <version>5.3.0</version>
+        </dependency>
+        <!-- https://mvnrepository.com/artifact/org.slf4j/slf4j-log4j12 -->
+        <!-- https://mvnrepository.com/artifact/org.springframework.boot/spring-boot-starter-logging -->
+        <dependency>
+            <groupId>org.springframework.boot</groupId>
+            <artifactId>spring-boot-starter-logging</artifactId>
+            <version>2.0.3.RELEASE</version>
+        </dependency>
+
+        <!-- 数据库连接jar包 -->
+        <dependency>
+            <groupId>mysql</groupId>
+            <artifactId>mysql-connector-java</artifactId>
+            <version>8.0.11</version>
+        </dependency>
+        <dependency>
+            <groupId>com.mchange</groupId>
+            <artifactId>c3p0</artifactId>
+            <version>0.9.5.2</version>
+        </dependency>
+
+        <dependency>
+            <groupId>com.jayway.jsonpath</groupId>
+            <artifactId>json-path</artifactId>
+            <scope>test</scope>
+        </dependency>
+
+        <!-- https://mvnrepository.com/artifact/com.fasterxml.jackson.core/jackson-databind -->
+        <dependency>
+            <groupId>com.fasterxml.jackson.core</groupId>
+            <artifactId>jackson-databind</artifactId>
+            <version>2.9.6</version>
+        </dependency>
+    </dependencies>
+
+    <build>
+        <plugins>
+            <plugin>
+                <groupId>org.springframework.boot</groupId>
+                <artifactId>spring-boot-maven-plugin</artifactId>
+            </plugin>
+        </plugins>
+    </build>
+
+
+</project>

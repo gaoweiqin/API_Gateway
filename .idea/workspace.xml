@@ -3,6 +3,7 @@
   <component name="ChangeListManager">
     <list default="true" id="ff0beb2d-15c8-405c-8855-5172177fedc3" name="Default" comment="">
       <change afterPath="$PROJECT_DIR$/src/main/java/com/test/testThread.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
     </list>
     <ignored path="$PROJECT_DIR$/target/" />
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
@@ -51,8 +52,8 @@
       <file leaf-file-name="testThread.java" pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/src/main/java/com/test/testThread.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="69">
-              <caret line="3" column="4" selection-start-line="3" selection-start-column="4" selection-end-line="3" selection-end-column="4" />
+            <state relative-caret-position="115">
+              <caret line="5" lean-forward="true" selection-start-line="5" selection-end-line="5" />
             </state>
           </provider>
         </entry>
@@ -336,12 +337,20 @@
       <option name="number" value="Default" />
       <option name="presentableId" value="Default" />
       <updated>1533535884606</updated>
-      <workItem from="1533535887733" duration="7045000" />
+      <workItem from="1533535887733" duration="7075000" />
     </task>
+    <task id="LOCAL-00001" summary="api">
+      <created>1533544123035</created>
+      <option name="number" value="00001" />
+      <option name="presentableId" value="LOCAL-00001" />
+      <option name="project" value="LOCAL" />
+      <updated>1533544123035</updated>
+    </task>
+    <option name="localTasksCounter" value="2" />
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="7045000" />
+    <option name="totallyTimeSpent" value="7075000" />
   </component>
   <component name="ToolWindowManager">
     <frame x="44" y="0" width="1280" height="690" extended-state="0" />
@@ -522,8 +531,8 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/src/main/java/com/test/testThread.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="69">
-          <caret line="3" column="4" selection-start-line="3" selection-start-column="4" selection-end-line="3" selection-end-column="4" />
+        <state relative-caret-position="115">
+          <caret line="5" lean-forward="true" selection-start-line="5" selection-end-line="5" />
         </state>
       </provider>
     </entry>

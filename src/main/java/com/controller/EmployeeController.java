@@ -21,8 +21,20 @@ public class EmployeeController {
     EmployeeService employeeService;
 
     @GetMapping("/employees/find")
-    public List<Employee> findAll() {
-
+    public List<Employee> findAll(HttpServletRequest request) {
+        String str = request.getContextPath();
+        System.out.println("111111" + str);
+        String requestUrl = request.getRequestURL().toString();
+        System.out.println(requestUrl);
+        String header =request.getHeader(requestUrl);
+        String queryString = request.getQueryString();
+        System.out.println("请求的资源" + queryString);
+        try {
+            Long datenum = request.getDateHeader(header);
+            System.out.println("时间数字" + datenum);
+        } catch (Exception e) {
+            e.printStackTrace();
+        }
         return employeeService.findAll();
     }
 

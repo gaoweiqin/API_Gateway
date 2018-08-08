@@ -20,6 +20,17 @@ public class LoginService {
         logger.info("查找全部");
         return userRepository.findAll();
     }
+    public String getPasswd(String name){
+        logger.info("验证用户名密码");
+
+        User user=userRepository.findByName(name);
+        if (user==null){
+            return "用户名不存在";
+        }else{
+            String passwd=user.getPassword();
+            return passwd;
+        }
+    }
 //    public Map<String, String> login(User user){
 //
 //        Map<String, String> tokenMap = new HashMap<>();

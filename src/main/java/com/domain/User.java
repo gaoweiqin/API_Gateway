@@ -18,5 +18,4 @@ public class User implements Serializable{
     private String name;
     @NotBlank
     private String password;
-
 }
